@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма для заполнения</title>
+  </head>
+  <body>
+    <header>
+      <h1>Кафе "Вкус жизни"</h1>
+    </header>
+    <main>
+      <h2>Форма для заполнения</h2>
+      <form>
+        <div>
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="date">Дата</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div>
+          <label for="time">Время</label>
+          <input type="time" id="time" name="time" />
+        </div>
+        <div>
+          <label for="guests">Количество гостей</label>
+          <input type="number" id="guests" name="guests" />
+        </div>
+        <div>
+          <label for="reason">Повод:</label>
+          <select id="reason" name="reason">
+            <option>Выберите вариант</option>
+            <option>просто поужинать</option>
+            <option>день рождения</option>
+            <option>деловая встреча</option>
+            <option>свидание</option>
+          </select>
+        </div>
+        <p>Где сидеть</p>
+        <div>
+          <label for="inside">зал</label>
+          <input type="radio" name="place" value="inside" id="inside" />
+        </div>
+        <div>
+          <label for="terrace">терраса</label>
+          <input type="radio" name="place" value="terrace" id="terrace" />
+        </div>
+        <div>
+          <label for="vip-room">VIP-комната</label>
+          <input type="radio" name="place" value="vip-room" id="vip-room" />
+        </div>
+        <p>Пожелания</p>
+        <div>
+          <label for="chair">детский стульчик</label>
+          <input type="checkbox" id="chair" name="wishes" value="chair" />
+        </div>
+        <div>
+          <label for="window">столик у окна</label>
+          <input type="checkbox" id="window" name="wishes" value="window" />
+        </div>
+        <div>
+          <label for="cake">торт от кафе</label>
+          <input type="checkbox" id="cake" name="wishes" value="cake" />
+        </div>
+        <div>
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" rows="5"></textarea>
+        </div>
+        <div>
+          <label for="agree">Согласие</label>
+          <input type="checkbox" id="agree" name="agree" required />
+        </div>
+        <button>Забронировать</button>
+      </form>
+    </main>
+    <footer>Зарина</footer>
+  </body>
+</html>
